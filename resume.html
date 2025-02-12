@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .resume-container {
+            max-width: 900px;
+            background: #fff;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: #333;
+            border-left: 5px solid #667eea;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content div {
+            flex: 1;
+            margin: 5px;
+        }
+        .skill-box {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>John Doe</h1>
+            <p>Software Engineer | Web Developer | Tech Enthusiast</p>
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Passionate software engineer with expertise in full-stack development, problem-solving, and scalable application design.</p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="content">
+                <span class="skill-box">JavaScript</span>
+                <span class="skill-box">HTML & CSS</span>
+                <span class="skill-box">React.js</span>
+                <span class="skill-box">Node.js</span>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">Java</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>Software Engineer</strong> - Tech Solutions Inc. (2021 - Present)</p>
+            <ul>
+                <li>Developed scalable web applications using React and Node.js.</li>
+                <li>Optimized database queries for better performance.</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality products.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor's Degree in Computer Science</strong> - XYZ University (2017 - 2021)</p>
+        </div>
+        <div class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
