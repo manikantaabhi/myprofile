@@ -3,136 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manikanta Neerugatti - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-        .resume-container {
-            max-width: 900px;
-            background: #fff;
-            margin: auto;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .header {
-            text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border-radius: 10px 10px 0 0;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        .header p {
-            margin: 5px 0;
-            font-size: 1.2em;
-        }
-        .section {
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        .section:last-child {
-            border-bottom: none;
-        }
-        .section h2 {
-            color: #333;
-            border-left: 5px solid #667eea;
-            padding-left: 10px;
-            margin-bottom: 10px;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .content div {
-            flex: 1;
-            margin: 5px;
-        }
-        .skill-box {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 8px 15px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 0.9em;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background: #667eea;
-            color: white;
-            border-radius: 0 0 10px 10px;
-        }
-        .contact a {
-            text-decoration: none;
-            color: #667eea;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .contact a:hover {
-            color: #764ba2;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
 </head>
 <body>
-    <div class="resume-container">
-        <div class="header">
-            <h1>Manikanta Neerugatti</h1>
-            <p>Software Engineer</p>
-            <p>Email: <a href="mailto:manikanta.thayappa@gmail.com">manikanta.thayappa@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/manikantaneerugatti/" target="_blank">linkedin.com/in/manikantaneerugatti</a></p>
-            <p>Phone: +1 (832) 799-4247</p>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Master of Science in Computer Science</strong> - University of Houston – Clear Lake (Aug 2023 - May 2025)</p>
-            <p><strong>B.Tech. Computer Science and Engineering</strong> - Sree Vidyanikethan Engineering College (Aug 2014 – May 2018)</p>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="content">
-                <span class="skill-box">Java</span>
-                <span class="skill-box">C#</span>
-                <span class="skill-box">JavaScript</span>
-                <span class="skill-box">Python</span>
-                <span class="skill-box">Spring Boot</span>
-                <span class="skill-box">Angular</span>
-                <span class="skill-box">SQL</span>
-                <span class="skill-box">MongoDB</span>
-                <span class="skill-box">DevOps</span>
-                <span class="skill-box">AWS</span>
+    <header class="header">
+        <h1 id="logo">Me</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Menu Icon -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="menu-btns" href="#motive">Motive</a></li>
+                <li><a class="menu-btns" href="#home">Home</a></li>
+                <li><a class="menu-btns" href="#skills">Skills</a></li>
+                <li><a class="menu-btns" href="#experience">Experience</a></li>
+                <li><a class="menu-btns" href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <h1 style="color: white; margin-bottom: 40px; font-size: 2.5rem;">Welcome to my Portfolio</h1>
+            <img src="../profile-pic.png" alt="hello">
+            <div>
+                <h1 class="header-title">
+                    <span class="up">Hi!</span>
+                    <span class="down">I'm <b>Manikanta Neerugatti</b></span>
+                    
+                </h1>
+                <p class="header-subtitle">FULL STACK DEVELOPER</p>
             </div>
-        </div>
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <p><strong>Back-end Developer</strong> - Ernst & Young (Mar 2022 – Jul 2023)</p>
-            <ul>
-                <li>Optimized data processing using Java 8 features.</li>
-                <li>Automated database operations improving efficiency.</li>
-            </ul>
-            <p><strong>Back-end Developer</strong> - KPMG (Oct 2021 – Mar 2022)</p>
-            <ul>
-                <li>Developed APIs for real-time vehicle tracking.</li>
-                <li>Enhanced website performance with Angular.</li>
-            </ul>
-            <p><strong>Full Stack Developer</strong> - TCS (Dec 2018 – Oct 2021)</p>
-            <ul>
-                <li>Developed banking web applications.</li>
-                <li>Designed user-friendly report viewing interfaces.</li>
-            </ul>
-        </div>
-        <div class="footer">
-            <p>&copy; 2025 Manikanta Neerugatti. All rights reserved.</p>
-        </div>
-    </div>
+        </section>
+        <section id="resume">
+            <a href="./myresume.pdf" download="Manikanta_Neerugatti_Resume" class="download-btn">Download Resume</a>
+        </section>
+        <section id="contact">
+            <h1 class="portfolio">Still Updating my Portfolio.....</h1>
+        </section>
+    </main>
 </body>
 </html>
