@@ -45,7 +45,6 @@ header {
 
 .menu-btns {
     border-radius: 20px; /* Set default radius */
-    background-color: transparent;
     color: #FFFFFF;
     transition: all 0.3s ease; /* Smooth animation */
   }
@@ -64,6 +63,10 @@ h1 {
 nav {
     margin: 20px 0;
     display: inline-block;
+}
+
+.nav-menu {
+    display: flex;
 }
 
 nav ul {
@@ -168,9 +171,7 @@ section {
 }
 
 /* Hide navigation menu by default on mobile */
-.nav-menu {
-    display: flex;
-}
+
 
 .portfolio {
     color: white;
@@ -198,14 +199,15 @@ section {
     .nav-menu {
         display: none; /* Hide navigation menu by default */
         flex-direction: column; /* Stack links vertically */
-        align-items: flex-start; /* Align links to the left inside the menu */
-        background-color: transparent; /* Add a background for better visibility */
+        align-items: end; /* Align links to the left inside the menu */
+        background-color: rgb(180, 179, 177); /* Add a background for better visibility */
         position: absolute;
-        top: 15px; /* Adjust based on header height */
-        right: 10%; /* Align the menu to the right side of the screen */
-        padding: 20px 20px; /* Add padding for better spacing */
+        top: 50px; /* Adjust based on header height */
+        right: 0%; /* Align the menu to the right side of the screen */
+        padding: 0px 20px; /* Add padding for better spacing */
         width: auto; /* Fit the menu to its content */
         z-index: 999;
+        border-radius: 10px;
     }
     
   .menu-btns:hover {
