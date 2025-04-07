@@ -210,7 +210,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 0.25rem;
+    gap: 1rem;
   }
 
   .skill-tag {
@@ -339,5 +339,9 @@ section {
     a {
         padding: 10px 15px; /* Adjust padding for mobile */
         font-size: 1rem; /* Adjust font size */
+    }
+    .skills-grid{
+
+        gap: 0.25rem;
     }
 }
