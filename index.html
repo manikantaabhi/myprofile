@@ -13,16 +13,17 @@
         <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Menu Icon -->
         <nav class="nav-menu">
             <ul>
-                <li><a class="menu-btns" href="#motive">Motive</a></li>
                 <li><a class="menu-btns" href="#home">Home</a></li>
+                <li><a class="menu-btns" href="#motive">Motive</a></li>
                 <li><a class="menu-btns" href="#skills">Skills</a></li>
                 <li><a class="menu-btns" href="#experience">Experience</a></li>
                 <li><a class="menu-btns" href="#projects">Projects</a></li>
+                <li><a class="menu-btns" href="#others">Others</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="intro" class="intro">
+        <section id="home" class="intro lazy-load from-left">
             <h1 style="color: white; margin-bottom: 40px; font-size: 2.5rem;">Welcome to my Portfolio</h1>
             <img src="./profile-pic.png" alt="hello">
             <div>
@@ -34,12 +35,71 @@
                 <p class="header-subtitle">FULL STACK DEVELOPER</p>
             </div>
         </section>
-        <section id="resume">
+        <section id="resume"    class="resume lazy-load">
             <a href="./myresume.pdf" download="Manikanta_Neerugatti_Resume" class="download-btn">Download Resume</a>
         </section>
-        <section id="contact">
+         <hr>
+        <section id="motive" class="motive lazy-load">
+            <h1 class="motive-heading">Motive</h1>
+            <p class="motive-text">As a full stack developer, I am driven by a passion to not only build efficient and scalable web 
+                applications but also to integrate cutting-edge Machine Learning and AI techniques into the solutions I create. 
+                My goal is to become a developer who deeply understands the technologies I work with—beyond the surface level—so 
+                I can contribute meaningfully to any organization I join. I strive to deliver innovative, intelligent, 
+                and high-impact solutions that stand out for clients and elevate the projects I’m part of.</p>
+        </section>
+        <hr>
+        <section id="skills" class="skills lazy-load from-left">
+            <h1 class="skills-heading">Skills</h1>
+            <div class="skills-section">
+                <div class="skills-grid">
+                  <div class="skill-tag">HTML</div>
+                  <div class="skill-tag">CSS</div>
+                  <div class="skill-tag">JavaScript</div>
+                  <div class="skill-tag">Angular</div>
+                  <div class="skill-tag">React</div>
+                  <div class="skill-tag">Spring Boot</div>
+                  <div class="skill-tag">Java</div>
+                  <div class="skill-tag">Python</div>
+                  <div class="skill-tag">Node.js</div>
+                  <div class="skill-tag">Express</div>
+                  <div class="skill-tag">MySQL</div>
+                  <div class="skill-tag">PostgreSQL</div>
+                  <div class="skill-tag">Docker</div>
+                  <div class="skill-tag">Git</div>
+                  <div class="skill-tag">TensorFlow</div>
+                  <div class="skill-tag">Keras</div>
+                  <div class="skill-tag">VGG16</div>
+                  <div class="skill-tag">Xception</div>
+                  <div class="skill-tag">Inception</div>
+                  <div class="skill-tag">Machine Learning</div>
+                  <div class="skill-tag">AI Integration</div>
+                  <div class="skill-tag">GraphQL</div>
+                  <div class="skill-tag">Redux</div>
+                  <div class="skill-tag">Firebase</div>
+                  <div class="skill-tag">WebSockets</div>
+                  <div class="skill-tag">Authentication</div>
+                  <div class="skill-tag">Agile</div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        <section id="myprofiles" class="myprofiles lazy-load">
+            <h1 class="myprofiles-heading">My Profiles</h1>
+            <div class="myprofiles-container">
+                <div class="project-card">
+                    <a href="https://leetcode.com/u/Manikanta_1234/"><img src="./leetcodelogo.png" alt="Project 1"></a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/manikantaabhi"><img src="./github.png" alt="Project 2"></a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+        <section id="contact" class="contact lazy-load from-left">
             <h1 class="portfolio">Still Updating my Portfolio.....</h1>
         </section>
+
     </main>
 </body>
 </html>

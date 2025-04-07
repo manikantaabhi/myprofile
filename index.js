@@ -14,3 +14,24 @@ document.addEventListener('click', (event) => {
     }
 });
 
+// index.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible"); // remove when out of view
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+  
+    document.querySelectorAll('.lazy-load').forEach(section => {
+      observer.observe(section);
+    });
+  });
+  
+  

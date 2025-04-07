@@ -98,10 +98,10 @@ section {
 }
 
 .intro {
-    height: 90vh; /* Set height to 100% of the viewport */
+    height: 100vh; /* Set height to 100% of the viewport */
     display: flex;
     flex-direction: column; /* Stack content vertically on smaller screens */
-    justify-content: center; /* Center vertically */
+    justify-content: space-around; /* Center vertically */
     align-items: center; /* Center horizontally */
     margin: 0; /* Remove auto margin */
     text-align: center; /* Center text for better mobile readability */
@@ -147,6 +147,18 @@ section {
     color: #FFFFFF;
 }
 
+#motive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px; /* Add some space above the motive section */
+    text-align: center; /* Center the text */
+}
+
 .download-btn {
     display: inline-block;
     background-color: hsl(211, 85%, 61%); /* Button background color */
@@ -173,6 +185,47 @@ section {
 /* Hide navigation menu by default on mobile */
 
 
+/* skills */
+.skills{
+    height: 100vh;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column; /* Stack items vertically */
+}
+
+  .skills-heading {
+    margin: 20px 0px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .skill-tag {
+    background-color: #e0e7ff;
+    color: #1e3a8a;
+    padding: 10px 18px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+  }
+
+  .skill-tag:hover {
+    transform: scale(1.05);
+    background-color: #c7d2fe;
+  }
+
+/* end of skills */
+
 .portfolio {
     color: white;
     display: flex;
@@ -182,7 +235,57 @@ section {
     margin-top: 20px; /* Add some space above the portfolio section */
 }
 
+#myprofiles {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    margin-top: 20px; /* Add some space above the portfolio section */
+}
+.myprofiles-heading{
+    margin: 20px 0px;
+    font-size: 2rem; /* Increase font size for better visibility */
+    text-align: center; /* Center the heading */
+    color: white; /* Ensure the text is white for contrast */
+}
   
+.myprofiles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add space between items */
+}
+.myprofiles-container img {
+    width: 200px; /* Set a fixed width for images */
+    height: 200px; /* Set a fixed height for images */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* lazy loading */
+
+/* Lazy load animation */
+/* Common lazy-load base */
+.lazy-load {
+    opacity: 0;
+    transform: translateX(100px); /* default from right */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .lazy-load.from-left {
+    transform: translateX(-100px);
+  }
+  
+  .lazy-load.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+/* Lazy loading styles */
 
 
 @media (max-width: 768px) {
