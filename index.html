@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manikanta's Portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <script src="./index.js"></script>
 </head>
 <body>
@@ -92,6 +94,47 @@
         </section>
         
         <hr>
+
+          <section id="experience" class="experience-section">
+            <h1 class="experience-heading">My Experience</h1>
+            <div class="experience-container ">
+              <!-- Ernst & Young -->
+              <div class="experience-card lazy-load">
+                <h3>Senior Consultant | Ernst & Young</h3>
+                <ul class="experience-tasks">
+                  <li>Developed business rules for a stock market regulatory application handling 80% of platform functionality using <strong>Java/Spring Boot</strong></li>
+                  <li>Automated backout queue data injection with <strong>custom Jenkins pipelines</strong>, reducing manual effort by 90%</li>
+                  <li>Implemented monitoring workflows using <strong>AWS CloudWatch</strong> for real-time system alerts</li>
+                </ul>
+                <button class="experience-button">View Project Details</button>
+              </div>
+          
+              <!-- KPMG -->
+              <div class="experience-card lazy-load from-left">
+                <h3>Associate Consultant | KPMG</h3>
+                <ul class="experience-tasks">
+                  <li>Built <strong>REST APIs</strong> for real-time vehicle tracking system with <strong>Node.js/Express</strong></li>
+                  <li>Migrated legacy modules to <strong>Angular</strong>, improving frontend performance by 35%</li>
+                  <li>Integrated location services with <strong>Google Maps API</strong> for dynamic route visualization</li>
+                </ul>
+                <button class="experience-button">View Project Details</button>
+              </div>
+          
+              <!-- TCS -->
+              <div class="experience-card lazy-load">
+                <h3>Systems Engineer | Tata Consultancy Services</h3>
+                <ul class="experience-tasks">
+                  <li>Full-stack development of banking portal with <strong>profit/loss dashboards</strong> serving 10K+ users</li>
+                  <li>Designed report generation system with <strong>PDF/CSV export</strong> using <strong>React</strong> and <strong>Spring Boot</strong></li>
+                  <li>Optimized <strong>SQL queries</strong> and stored procedures, reducing data latency by 25%</li>
+                  <li>Integrated application as microservice with legacy systems achieving <strong>zero downtime</strong></li>
+                </ul>
+                <button class="experience-button">View Project Details</button>
+              </div>
+            </div>
+          </section>
+          
+          <hr>
         <section id="myprofiles" class="myprofiles lazy-load">
             <h1 class="myprofiles-heading">My Profiles</h1>
             <div class="myprofiles-container">
@@ -109,5 +152,23 @@
         </section>
 
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+          <h2 class="footer-title">Let's Connect</h2>
+          <div class="footer-socials">
+            <a href="https://github.com/manikantaabhi" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/manikantaneerugatti" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:manikanta.thayappa@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p class="footer-copy">&copy; 2025 Manikanta Neerugatti. All rights reserved.</p>
+        </div>
+      </footer>
+      
 </body>
 </html>

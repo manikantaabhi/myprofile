@@ -232,6 +232,73 @@ section {
 
 /* end of skills */
 
+/* experience */
+.experience-section {
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .experience-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+  
+  .experience-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .experience-card {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    width: 25%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .experience-card p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .experience-button {
+    margin: auto;
+    padding: 0.6rem 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  h3{
+    color: #CCCCCC;
+  }
+
+  .experience-tasks{
+    color: #AAAAAA;
+  }
+  
+  .experience-button:hover {
+    background-color: #0056b3;
+  }
+  
+/* end experience */
+
 .portfolio {
     color: white;
     display: flex;
@@ -270,6 +337,54 @@ section {
     border-radius: 10px; /* Rounded corners for images */
     transition: transform 0.3s ease; /* Smooth scaling effect */
 }
+
+
+
+/* footer */
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-socials a {
+    font-size: 1.5rem;
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #fff; /* Or use an accent like #00ADB5 or #FFD369 */
+  }
+  
+  .footer-copy {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+
+/* end footer */
 
 /* lazy loading */
 
@@ -343,5 +458,19 @@ section {
     .skills-grid{
 
         gap: 0.25rem;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto;
+
+    }
+    .experience-section{
+        height: auto; /* Allow height to adjust based on content */
+    }
+    .experience-card {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Add margin between cards */
     }
 }
